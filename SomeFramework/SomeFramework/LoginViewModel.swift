@@ -1,4 +1,4 @@
-//
+
 //  LoginViewModel.swift
 //  UI_Framework
 //
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import ReactiveSwift
+//import ReactiveSwift
 
 protocol LoginViewModel {
-  var title: MutableProperty<String> {get}
+//  var title: MutableProperty<String> {get}
 }

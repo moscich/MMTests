@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface MMTestRunner : NSObject
-
+@property(nonatomic, strong) NSMutableArray *bundles;
 - (NSArray *)runTests;
 
 @end

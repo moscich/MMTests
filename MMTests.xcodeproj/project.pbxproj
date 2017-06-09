@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		790BD9491EE1E1830090C344 /* MMTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 790BD9471EE1E1830090C344 /* MMTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79536BD71EE2935D00F6C0B9 /* MMTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BD51EE2935D00F6C0B9 /* MMTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */; };
+		79536BF41EE2B99D00F6C0B9 /* MMTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79536BF51EE2B99D00F6C0B9 /* MMTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79536BF31EE2B99D00F6C0B9 /* MMTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		790BD9441EE1E1830090C344 /* MMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790BD9471EE1E1830090C344 /* MMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTests.h; sourceTree = "<group>"; };
 		790BD9481EE1E1830090C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79536BD51EE2935D00F6C0B9 /* MMTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestRunner.h; sourceTree = "<group>"; };
+		79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestRunner.m; sourceTree = "<group>"; };
+		79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestCase.h; sourceTree = "<group>"; };
+		79536BF31EE2B99D00F6C0B9 /* MMTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		790BD9461EE1E1830090C344 /* MMTests */ = {
 			isa = PBXGroup;
 			children = (
+				79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */,
+				79536BF31EE2B99D00F6C0B9 /* MMTestCase.m */,
+				79536BD51EE2935D00F6C0B9 /* MMTestRunner.h */,
+				79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */,
 				790BD9471EE1E1830090C344 /* MMTests.h */,
 				790BD9481EE1E1830090C344 /* Info.plist */,
 			);
@@ -59,6 +71,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79536BF41EE2B99D00F6C0B9 /* MMTestCase.h in Headers */,
+				79536BD71EE2935D00F6C0B9 /* MMTestRunner.h in Headers */,
 				790BD9491EE1E1830090C344 /* MMTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */,
+				79536BF51EE2B99D00F6C0B9 /* MMTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +305,7 @@
 				790BD94E1EE1E1830090C344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

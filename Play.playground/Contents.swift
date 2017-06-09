@@ -2,9 +2,12 @@
 
 import UIKit
 import MMTests
+import UI_Framework
+import ReactiveSwift
+import ReactiveCocoa
+import Result
 
 var str = "Hello, playground"
 
-//let vc = LoginViewModelImpl()
 let runner = MMTestRunner()
 let array = runner.runTests()

@@ -33,6 +33,7 @@ __strong static NSMutableArray *testReport = nil;
     if (!testReport) {
         testReport = [NSMutableArray new];
     }
+  NSLog(@"obj = %@ obj = %@", obj1, obj2);
     if ([obj1 isEqual:obj2]) {
         [testReport addObject:[NSString stringWithFormat:@"%@ Passed", context]];
     } else {

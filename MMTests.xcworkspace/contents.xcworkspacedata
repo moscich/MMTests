@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MMTests.xcodeproj">
+      location = "group:Play.playground">
+   </FileRef>
+   <FileRef
+      location = "group:UI_Framework/UI_Framework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MMTestDemo/MMTestDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:MMTests.xcodeproj">
    </FileRef>
 </Workspace>

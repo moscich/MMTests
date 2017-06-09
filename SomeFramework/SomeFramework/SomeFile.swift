@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+public class HelloClass {
+  public init() {
+    
+  }
+  
+  public func some() {
+    print("Some")
+  }
+}

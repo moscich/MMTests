@@ -12,7 +12,24 @@
 		790BD9611EE1F57C0090C344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790BD95F1EE1F57C0090C344 /* Main.storyboard */; };
 		790BD9631EE1F57C0090C344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790BD9621EE1F57C0090C344 /* Assets.xcassets */; };
 		790BD9661EE1F57C0090C344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790BD9641EE1F57C0090C344 /* LaunchScreen.storyboard */; };
+		79536BF91EE2CC3F00F6C0B9 /* MMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79536BF71EE2CC3F00F6C0B9 /* MMTests.framework */; };
+		79536BFF1EE318C600F6C0B9 /* UI_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79536BFD1EE318C600F6C0B9 /* UI_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79536C021EE318F700F6C0B9 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79536C011EE318F700F6C0B9 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79536C001EE318C600F6C0B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79536BFF1EE318C600F6C0B9 /* UI_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		790BD9581EE1F57C0090C344 /* MMTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +39,10 @@
 		790BD9621EE1F57C0090C344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790BD9651EE1F57C0090C344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790BD9671EE1F57C0090C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79536BF71EE2CC3F00F6C0B9 /* MMTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMTests.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MMTests-bstoiuiulddzdactzmlgkjxbicys/Build/Products/Debug-iphonesimulator/MMTests.framework"; sourceTree = "<group>"; };
+		79536BF81EE2CC3F00F6C0B9 /* UI_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UI_Framework.framework; path = "../UI_Framework/build/Debug-iphoneos/UI_Framework.framework"; sourceTree = "<group>"; };
+		79536BFD1EE318C600F6C0B9 /* UI_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UI_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79536C011EE318F700F6C0B9 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79536C021EE318F700F6C0B9 /* ReactiveCocoa.framework in Frameworks */,
+				79536BF91EE2CC3F00F6C0B9 /* MMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +61,10 @@
 		790BD94F1EE1F57C0090C344 = {
 			isa = PBXGroup;
 			children = (
+				79536BFD1EE318C600F6C0B9 /* UI_Framework.framework */,
 				790BD95A1EE1F57C0090C344 /* MMTestDemo */,
 				790BD9591EE1F57C0090C344 /* Products */,
+				79536BF61EE2CC3F00F6C0B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +89,16 @@
 			path = MMTestDemo;
 			sourceTree = "<group>";
 		};
+		79536BF61EE2CC3F00F6C0B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79536C011EE318F700F6C0B9 /* ReactiveCocoa.framework */,
+				79536BF71EE2CC3F00F6C0B9 /* MMTests.framework */,
+				79536BF81EE2CC3F00F6C0B9 /* UI_Framework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +109,8 @@
 				790BD9541EE1F57C0090C344 /* Sources */,
 				790BD9551EE1F57C0090C344 /* Frameworks */,
 				790BD9561EE1F57C0090C344 /* Resources */,
+				79536C001EE318C600F6C0B9 /* Embed Frameworks */,
+				79536C031EE3192100F6C0B9 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -131,6 +168,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79536C031EE3192100F6C0B9 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Result.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		790BD9541EE1F57C0090C344 /* Sources */ = {
@@ -260,8 +317,10 @@
 		790BD96B1EE1F57C0090C344 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X6HK62UHTP;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/**";
 				INFOPLIST_FILE = MMTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moscichowski.MMTestDemo;
@@ -273,8 +332,10 @@
 		790BD96C1EE1F57C0090C344 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X6HK62UHTP;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/**";
 				INFOPLIST_FILE = MMTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moscichowski.MMTestDemo;
@@ -302,6 +363,7 @@
 				790BD96C1EE1F57C0090C344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

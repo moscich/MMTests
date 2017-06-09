@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import ReactiveSwift
+
+public class LoginViewModelImpl: LoginViewModel {
+  public init() {
+    
+  }
+  var title: MutableProperty<String> = MutableProperty("")
+}
