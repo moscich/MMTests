@@ -7,6 +7,7 @@
 //
 
 #import "MMTestCase.h"
+#import "MMTestResult.h"
 
 @interface MMTestCase ()
 
@@ -16,29 +17,30 @@
 __strong static NSMutableArray *testReport = nil;
 
 + (NSArray *)report {
-    return testReport;
+  return testReport;
 }
 
 +(void) initialize
 {
-    if (! testReport)
-        testReport = [[NSMutableArray alloc] init];
+  if (! testReport)
+    testReport = [[NSMutableArray alloc] init];
 }
 
 + (void)reset {
-    testReport = [NSMutableArray new];
+  testReport = [NSMutableArray new];
 }
 
 + (void)AssertEqual:(NSObject *)obj1 object:(NSObject *)obj2 context:(NSString *)context {
-    if (!testReport) {
-        testReport = [NSMutableArray new];
-    }
-  NSLog(@"obj = %@ obj = %@", obj1, obj2);
-    if ([obj1 isEqual:obj2]) {
-        [testReport addObject:[NSString stringWithFormat:@"%@ Passed", context]];
-    } else {
-        [testReport addObject:[NSString stringWithFormat:@"%@ Failed", context]];
-    }
+  if (!testReport) {
+    testReport = [NSMutableArray new];
+  }
+  
+  MMTestResult *testResult = [MMTestResult new];
+  testResult.name = context;
+  testResult.passed = [obj1 isEqual:obj2];
+  
+  [testReport addObject:testResult];
+  
 }
 
 @end

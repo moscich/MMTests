@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MMTestRunner.h"
 #import "MMTestCase.h"
+#import "MMDisplayer.h"
+#import "MMTestResult.h"
 
 //! Project version number for MMTests.
 FOUNDATION_EXPORT double MMTestsVersionNumber;

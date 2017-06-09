@@ -26,6 +26,6 @@ class LoginViewController : UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-//    self.label.reactive.text <~ viewModel.title
+    self.label.reactive.text <~ viewModel.title
   }
 }

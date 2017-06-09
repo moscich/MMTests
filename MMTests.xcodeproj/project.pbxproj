@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		790BD9491EE1E1830090C344 /* MMTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 790BD9471EE1E1830090C344 /* MMTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79215ACC1EEB06BB008C749B /* MMDisplayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 79215ACA1EEB06BB008C749B /* MMDisplayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79215ACD1EEB06BB008C749B /* MMDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79215ACB1EEB06BB008C749B /* MMDisplayer.m */; };
+		79215AF21EEB2527008C749B /* MMTestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 79215AF01EEB2527008C749B /* MMTestResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79215AF31EEB2527008C749B /* MMTestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 79215AF11EEB2527008C749B /* MMTestResult.m */; };
 		79536BD71EE2935D00F6C0B9 /* MMTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BD51EE2935D00F6C0B9 /* MMTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */; };
 		79536BF41EE2B99D00F6C0B9 /* MMTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,6 +22,10 @@
 		790BD9441EE1E1830090C344 /* MMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790BD9471EE1E1830090C344 /* MMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTests.h; sourceTree = "<group>"; };
 		790BD9481EE1E1830090C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79215ACA1EEB06BB008C749B /* MMDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDisplayer.h; sourceTree = "<group>"; };
+		79215ACB1EEB06BB008C749B /* MMDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDisplayer.m; sourceTree = "<group>"; };
+		79215AF01EEB2527008C749B /* MMTestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestResult.h; sourceTree = "<group>"; };
+		79215AF11EEB2527008C749B /* MMTestResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestResult.m; sourceTree = "<group>"; };
 		79536BD51EE2935D00F6C0B9 /* MMTestRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestRunner.h; sourceTree = "<group>"; };
 		79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestRunner.m; sourceTree = "<group>"; };
 		79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestCase.h; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 				79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */,
 				790BD9471EE1E1830090C344 /* MMTests.h */,
 				790BD9481EE1E1830090C344 /* Info.plist */,
+				79215ACA1EEB06BB008C749B /* MMDisplayer.h */,
+				79215ACB1EEB06BB008C749B /* MMDisplayer.m */,
+				79215AF01EEB2527008C749B /* MMTestResult.h */,
+				79215AF11EEB2527008C749B /* MMTestResult.m */,
 			);
 			path = MMTests;
 			sourceTree = "<group>";
@@ -72,7 +84,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79536BF41EE2B99D00F6C0B9 /* MMTestCase.h in Headers */,
+				79215AF21EEB2527008C749B /* MMTestResult.h in Headers */,
 				79536BD71EE2935D00F6C0B9 /* MMTestRunner.h in Headers */,
+				79215ACC1EEB06BB008C749B /* MMDisplayer.h in Headers */,
 				790BD9491EE1E1830090C344 /* MMTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */,
+				79215ACD1EEB06BB008C749B /* MMDisplayer.m in Sources */,
+				79215AF31EEB2527008C749B /* MMTestResult.m in Sources */,
 				79536BF51EE2B99D00F6C0B9 /* MMTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
