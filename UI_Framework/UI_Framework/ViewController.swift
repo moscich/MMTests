@@ -7,15 +7,13 @@
 //
 
 import Foundation
-import ReactiveCocoa
-import ReactiveSwift
 
 public class ViewController : UIViewController {
   
   let viewModel : ViewModel
-  @IBOutlet var label: UILabel!
+  @IBOutlet public var label: UILabel!
   
-  public init(viewModel: ViewModel) {
+  public init(viewModel: ViewModel = ViewModelImpl()) {
     self.viewModel = viewModel
     super.init(nibName: "ViewController", bundle: Bundle.init(for: type(of: self)))
   }
@@ -26,6 +24,6 @@ public class ViewController : UIViewController {
   
   public override func viewDidLoad() {
     super.viewDidLoad()
-    self.label.reactive.text <~ viewModel.title
+    
   }
 }

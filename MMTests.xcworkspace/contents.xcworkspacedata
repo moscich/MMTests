@@ -8,9 +8,6 @@
       location = "group:Play.playground">
    </FileRef>
    <FileRef
-      location = "group:ViewController.playground">
-   </FileRef>
-   <FileRef
       location = "group:UI_Framework/UI_Framework.xcodeproj">
    </FileRef>
    <FileRef
@@ -18,5 +15,8 @@
    </FileRef>
    <FileRef
       location = "container:MMTests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewController.playground">
    </FileRef>
 </Workspace>

@@ -18,7 +18,7 @@ class ViewControllerTests : MMTestCase {
     _ = ctrl.view
     MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "" as NSObject, context: #function)
     
-    vm.title.value = "Test"
+//    vm.title.value = "Test"
     
     MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "Test" as NSObject, context: #function)
     

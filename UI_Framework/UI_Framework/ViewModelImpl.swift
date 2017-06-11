@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import ReactiveSwift
+//import ReactiveSwift
 
 public class ViewModelImpl: ViewModel {
   public init() {
     
   }
-  public var title: MutableProperty<String> = MutableProperty("")
+//  public var title: MutableProperty<String> = MutableProperty("")
 }

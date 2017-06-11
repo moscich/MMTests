@@ -7,8 +7,9 @@
 //
 
 import Foundation
-import ReactiveSwift
+//import ReactiveSwift
 
 public protocol ViewModel {
-  var title: MutableProperty<String> {get}
+  
+//  var title: MutableProperty<String> {get}
 }

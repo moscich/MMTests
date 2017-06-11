@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7931725C1EE3F426008B7E8A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */; };
 		7931725E1EE3F6E2008B7E8A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725D1EE3F6E2008B7E8A /* ViewModel.swift */; };
 		793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */; };
 		793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793172611EE3FCAF008B7E8A /* ViewController.xib */; };
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7931725C1EE3F426008B7E8A /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
