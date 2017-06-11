@@ -3,9 +3,6 @@
 import UIKit
 import MMTests
 import UI_Framework
-import ReactiveSwift
-import ReactiveCocoa
-import Result
 import PlaygroundSupport
 
 let runner = MMTestRunner()
