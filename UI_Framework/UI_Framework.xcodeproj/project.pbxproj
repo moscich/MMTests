@@ -11,6 +11,7 @@
 		793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */; };
 		793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793172611EE3FCAF008B7E8A /* ViewController.xib */; };
 		7937FE621EED7E9E00A20F6D /* cocoahead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7937FE611EED7E9E00A20F6D /* cocoahead.png */; };
+		793F3E561EEDDDF600CAF590 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */; };
 		79536BE81EE2960100F6C0B9 /* UI_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BE61EE2960100F6C0B9 /* UI_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79536BEF1EE2961900F6C0B9 /* SomeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BEE1EE2961900F6C0B9 /* SomeFile.swift */; };
 		79536BF11EE2B96D00F6C0B9 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */; };
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793F3E561EEDDDF600CAF590 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

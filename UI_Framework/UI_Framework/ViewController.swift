@@ -24,6 +24,6 @@ public class ViewController : UIViewController {
   
   public override func viewDidLoad() {
     super.viewDidLoad()
-    
+    label.text = "Hello CocoaHeads!"
   }
 }

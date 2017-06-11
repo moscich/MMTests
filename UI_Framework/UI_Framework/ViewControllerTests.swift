@@ -12,7 +12,7 @@ import MMTests
 class ViewControllerTests : MMTestCase {
   
   func testExample() {
-    print("Let's go mate!")
+  
     let vm = ViewModelImpl()
     let ctrl = ViewController(viewModel: vm)
     _ = ctrl.view
