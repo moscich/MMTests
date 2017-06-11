@@ -13,15 +13,15 @@ class ViewControllerTests : MMTestCase {
   
   func testExample() {
     print("Let's go mate!")
-    let vm = LoginViewModelImpl()
-    let ctrl = LoginViewController(viewModel: vm)
+    let vm = ViewModelImpl()
+    let ctrl = ViewController(viewModel: vm)
     _ = ctrl.view
     MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "" as NSObject, context: #function)
     
     vm.title.value = "Test"
     
     MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "Test" as NSObject, context: #function)
-    print("End")
+    
   }
   
 }

@@ -1,5 +1,5 @@
 //
-//  LoginViewModelImpl.swift
+//  ViewModelImpl.swift
 //  UI_Framework
 //
 //  Created by Marek Mościchowski on 04.06.2017.
@@ -9,9 +9,9 @@
 import Foundation
 import ReactiveSwift
 
-public class LoginViewModelImpl: LoginViewModel {
+public class ViewModelImpl: ViewModel {
   public init() {
     
   }
-  var title: MutableProperty<String> = MutableProperty("")
+  public var title: MutableProperty<String> = MutableProperty("")
 }
