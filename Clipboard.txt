@@ -1,0 +1,27 @@
+let bundles = MMTestRunner.bundles()
+////
+bundles?.contains("UI_Framework.framework")
+////
+import PlaygroundSupport
+////
+PlaygroundPage.current.needsIndefiniteExecution = true
+PlaygroundPage.current.liveView = ctrl.view
+////
+let bundles = MMTestRunner.bundles()
+bundles?.contains("UI_Framework.framework")
+////
+self.label.reactive.text <~ viewModel.title
+////
+let vm = ViewModelImpl()
+let ctrl = ViewController(viewModel: vm)
+////
+let displayer = MMDisplayer()
+displayer.send(summary.passed, failed: summary.failed) {
+  PlaygroundPage.current.finishExecution()
+}
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+
+////
+Ending Changed
