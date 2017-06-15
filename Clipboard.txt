@@ -1,7 +1,3 @@
-let bundles = MMTestRunner.bundles()
-////
-bundles?.contains("UI_Framework.framework")
-////
 import PlaygroundSupport
 ////
 PlaygroundPage.current.needsIndefiniteExecution = true
@@ -21,7 +17,5 @@ displayer.send(summary.passed, failed: summary.failed) {
 }
 
 PlaygroundPage.current.needsIndefiniteExecution = true
-
-
 ////
 Ending Changed
