@@ -12,4 +12,5 @@ import Foundation
 public protocol ViewModel {
   
 //  var title: MutableProperty<String> {get}
+  var title: String? {get}
 }

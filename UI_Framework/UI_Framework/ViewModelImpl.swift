@@ -14,4 +14,5 @@ public class ViewModelImpl: ViewModel {
     
   }
 //  public var title: MutableProperty<String> = MutableProperty("")
+  public var title: String?
 }
