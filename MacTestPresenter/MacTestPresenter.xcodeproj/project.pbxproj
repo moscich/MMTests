@@ -13,6 +13,7 @@
 		79215AE21EEB0BC9008C749B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79215AE01EEB0BC9008C749B /* Main.storyboard */; };
 		79215AEA1EEB135A008C749B /* MacTestPresenter.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 79215AE91EEB135A008C749B /* MacTestPresenter.sdef */; };
 		79215AEF1EEB212E008C749B /* MyLookupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 79215AED1EEB13E7008C749B /* MyLookupCommand.m */; };
+		79BF8C451EF5CC2E00CAED0F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BF8C441EF5CC2E00CAED0F /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		79215AEB1EEB13E7008C749B /* MacTestPresenter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacTestPresenter-Bridging-Header.h"; sourceTree = "<group>"; };
 		79215AEC1EEB13E7008C749B /* MyLookupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLookupCommand.h; sourceTree = "<group>"; };
 		79215AED1EEB13E7008C749B /* MyLookupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLookupCommand.m; sourceTree = "<group>"; };
+		79BF8C431EF5CC2E00CAED0F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "../../../../../Downloads/CocoaHTTPServer-master/Vendor/CocoaAsyncSocket/GCDAsyncSocket.h"; sourceTree = "<group>"; };
+		79BF8C441EF5CC2E00CAED0F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "../../../../../Downloads/CocoaHTTPServer-master/Vendor/CocoaAsyncSocket/GCDAsyncSocket.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				79215AEC1EEB13E7008C749B /* MyLookupCommand.h */,
 				79215AED1EEB13E7008C749B /* MyLookupCommand.m */,
 				79215AEB1EEB13E7008C749B /* MacTestPresenter-Bridging-Header.h */,
+				79BF8C431EF5CC2E00CAED0F /* GCDAsyncSocket.h */,
+				79BF8C441EF5CC2E00CAED0F /* GCDAsyncSocket.m */,
 			);
 			path = MacTestPresenter;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BF8C451EF5CC2E00CAED0F /* GCDAsyncSocket.m in Sources */,
 				79215ADD1EEB0BC9008C749B /* ViewController.swift in Sources */,
 				79215AEF1EEB212E008C749B /* MyLookupCommand.m in Sources */,
 				79215ADB1EEB0BC9008C749B /* AppDelegate.swift in Sources */,
@@ -309,6 +315,7 @@
 				79215AE81EEB0BC9008C749B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

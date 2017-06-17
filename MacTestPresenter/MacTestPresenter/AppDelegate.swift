@@ -9,11 +9,13 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
 
   var statusBar = NSStatusBar.system()
   var statusBarItem : NSStatusItem = NSStatusItem()
   var menu: NSMenu = NSMenu()
+  var sock: GCDAsyncSocket?
+  var newSock: GCDAsyncSocket?
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
 
@@ -22,11 +24,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusBarItem = statusBar.statusItem(withLength: -1)
     statusBarItem.menu = menu
     let attString = NSMutableAttributedString(string: "Łom\nBom")
-    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.red, range: NSRange.init(location: 0, length: 3))
-    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.green, range: NSRange.init(location: 4, length: 3))
+    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.green, range: NSRange.init(location: 0, length: 3))
+    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.red, range: NSRange.init(location: 4, length: 3))
     attString.addAttribute(NSFontAttributeName, value: NSFont.systemFont(ofSize: 10), range: NSRange.init(location: 0, length: 7))
     statusBarItem.attributedTitle = attString
     
+    sock = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.main)
+    
+    do {
+      try sock?.accept(onPort: 12345)
+    } catch  {
+      print("error = ")
+    }
+  }
+  
+  func socket(_ sock: GCDAsyncSocket!, didAcceptNewSocket newSocket: GCDAsyncSocket!) {
+    self.newSock = newSocket
+    self.newSock?.readData(withTimeout: -1, tag: 0)
+  }
+  
+  func socket(_ sock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
+    let string = String.init(data: data, encoding: .utf8)
+    let components = string?.components(separatedBy: "|")
+    updateBarItem(passed: Int(components![0])!, failed: Int(components![1])!)
+    self.newSock?.readData(withTimeout: -1, tag: 0)
   }
   
   @objc func updateBar(notification: Notification){
