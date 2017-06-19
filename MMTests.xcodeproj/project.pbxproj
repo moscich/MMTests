@@ -16,8 +16,8 @@
 		79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */; };
 		79536BF41EE2B99D00F6C0B9 /* MMTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79536BF51EE2B99D00F6C0B9 /* MMTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 79536BF31EE2B99D00F6C0B9 /* MMTestCase.m */; };
-		79BF8C411EF5C88000CAED0F /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BF8C3F1EF5C88000CAED0F /* GCDAsyncSocket.h */; };
-		79BF8C421EF5C88000CAED0F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BF8C401EF5C88000CAED0F /* GCDAsyncSocket.m */; };
+		79F756791EF82AE800C17CD8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F756771EF82AE800C17CD8 /* GCDAsyncSocket.h */; };
+		79F7567A1EF82AE800C17CD8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F756781EF82AE800C17CD8 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		79536BD61EE2935D00F6C0B9 /* MMTestRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestRunner.m; sourceTree = "<group>"; };
 		79536BF21EE2B99D00F6C0B9 /* MMTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTestCase.h; sourceTree = "<group>"; };
 		79536BF31EE2B99D00F6C0B9 /* MMTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTestCase.m; sourceTree = "<group>"; };
-		79BF8C3F1EF5C88000CAED0F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "../../../../Downloads/CocoaHTTPServer-master/Vendor/CocoaAsyncSocket/GCDAsyncSocket.h"; sourceTree = "<group>"; };
-		79BF8C401EF5C88000CAED0F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "../../../../Downloads/CocoaHTTPServer-master/Vendor/CocoaAsyncSocket/GCDAsyncSocket.m"; sourceTree = "<group>"; };
+		79F756771EF82AE800C17CD8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		79F756781EF82AE800C17CD8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 				79215ACB1EEB06BB008C749B /* MMDisplayer.m */,
 				79215AF01EEB2527008C749B /* MMTestResult.h */,
 				79215AF11EEB2527008C749B /* MMTestResult.m */,
-				79BF8C3F1EF5C88000CAED0F /* GCDAsyncSocket.h */,
-				79BF8C401EF5C88000CAED0F /* GCDAsyncSocket.m */,
+				79F756771EF82AE800C17CD8 /* GCDAsyncSocket.h */,
+				79F756781EF82AE800C17CD8 /* GCDAsyncSocket.m */,
 			);
 			path = MMTests;
 			sourceTree = "<group>";
@@ -93,8 +93,8 @@
 				79215AF21EEB2527008C749B /* MMTestResult.h in Headers */,
 				79536BD71EE2935D00F6C0B9 /* MMTestRunner.h in Headers */,
 				79215ACC1EEB06BB008C749B /* MMDisplayer.h in Headers */,
+				79F756791EF82AE800C17CD8 /* GCDAsyncSocket.h in Headers */,
 				790BD9491EE1E1830090C344 /* MMTests.h in Headers */,
-				79BF8C411EF5C88000CAED0F /* GCDAsyncSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F7567A1EF82AE800C17CD8 /* GCDAsyncSocket.m in Sources */,
 				79536BD81EE2935D00F6C0B9 /* MMTestRunner.m in Sources */,
-				79BF8C421EF5C88000CAED0F /* GCDAsyncSocket.m in Sources */,
 				79215ACD1EEB06BB008C749B /* MMDisplayer.m in Sources */,
 				79215AF31EEB2527008C749B /* MMTestResult.m in Sources */,
 				79536BF51EE2B99D00F6C0B9 /* MMTestCase.m in Sources */,
