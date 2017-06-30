@@ -19,8 +19,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-    NotificationCenter.default.addObserver(self, selector: #selector(updateBar), name: NSNotification.Name(rawValue: "updateBar"), object: nil)
-    
     statusBarItem = statusBar.statusItem(withLength: -1)
     statusBarItem.menu = menu
     let attString = NSMutableAttributedString(string: "Łom\nBom")
@@ -50,14 +48,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
     self.newSock?.readData(withTimeout: -1, tag: 0)
   }
   
-  @objc func updateBar(notification: Notification){
-    let string = notification.object as! String
-    let components = string.components(separatedBy: ",")
-    let passed = Int(components[0])!
-    let failed = Int(components[1])!
-    self.updateBarItem(passed: passed, failed: failed)
-  }
-  
   func updateBarItem(passed:Int, failed:Int) {
     let passedString = "\(passed)"
     let failedString = "\(failed)"
@@ -68,6 +58,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
     attString.addAttribute(NSFontAttributeName, value: NSFont.systemFont(ofSize: 10), range: NSRange.init(location: 0, length: string.characters.count))
     statusBarItem.attributedTitle = attString
     
+    if failed > 0 {
+      let notif = NSUserNotification()
+      notif.title = "Failed \(failed)"
+      notif.informativeText = "Passed \(passed)\nFailed \(failed)"
+      //      notif.
+      NSUserNotificationCenter.default.scheduleNotification(notif)
+    }
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
