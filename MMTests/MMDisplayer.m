@@ -25,6 +25,13 @@
   return self;
 }
 
+- (void)send:(NSString *)message completion:(void (^)())completion {
+  self.completion = completion;
+  NSString *string = [NSString stringWithFormat:@"F%@", message];
+  
+  [self.sock writeData:[string dataUsingEncoding:kCFStringEncodingUTF8 ] withTimeout:-1 tag:0];
+}
+
 - (void)send:(NSInteger)passed failed:(NSInteger)failed completion:(void (^)())completion {
   self.completion = completion;
   NSString *string = [NSString stringWithFormat:@"%d|%d", passed, failed];

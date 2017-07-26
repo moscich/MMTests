@@ -10,6 +10,7 @@
 
 @interface MMDisplayer : NSObject
 
+- (void)send:(NSString *)message completion:(void (^)())completion;
 - (void)send:(NSInteger)passed failed:(NSInteger)failed completion:(void (^)())completion;
 
 @end

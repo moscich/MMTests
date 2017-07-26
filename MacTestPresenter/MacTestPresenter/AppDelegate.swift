@@ -10,7 +10,7 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
-
+  
   var statusBar = NSStatusBar.system()
   var statusBarItem : NSStatusItem = NSStatusItem()
   var menu: NSMenu = NSMenu()
@@ -18,10 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
   var newSock: GCDAsyncSocket?
   
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-
+    
     statusBarItem = statusBar.statusItem(withLength: -1)
     statusBarItem.menu = menu
-    let attString = NSMutableAttributedString(string: "Łom\nBom")
+    let attString = NSMutableAttributedString(string: "P\nF")
     attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.green, range: NSRange.init(location: 0, length: 3))
     attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.red, range: NSRange.init(location: 4, length: 3))
     attString.addAttribute(NSFontAttributeName, value: NSFont.systemFont(ofSize: 10), range: NSRange.init(location: 0, length: 7))
@@ -43,9 +43,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
   
   func socket(_ sock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
     let string = String.init(data: data, encoding: .utf8)
-    let components = string?.components(separatedBy: "|")
-    updateBarItem(passed: Int(components![0])!, failed: Int(components![1])!)
-    self.newSock?.readData(withTimeout: -1, tag: 0)
+    if string?.characters.first == "F" {
+      let notif = NSUserNotification()
+      let message = string!.substring(from: string!.index(string!.startIndex, offsetBy: 1))
+      notif.title = "Tests Failed"
+      notif.informativeText = message
+      NSUserNotificationCenter.default.scheduleNotification(notif)
+    } else {
+      let components = string?.components(separatedBy: "|")
+      updateBarItem(passed: Int(components![0])!, failed: Int(components![1])!)
+      self.newSock?.readData(withTimeout: -1, tag: 0)
+    }
   }
   
   func updateBarItem(passed:Int, failed:Int) {
@@ -66,7 +74,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
       NSUserNotificationCenter.default.scheduleNotification(notif)
     }
   }
-
+  
   func applicationWillTerminate(_ aNotification: Notification) {
     // Insert code here to tear down your application
   }
