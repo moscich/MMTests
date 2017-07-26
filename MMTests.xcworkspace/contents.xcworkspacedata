@@ -5,6 +5,9 @@
       location = "group:MacTestPresenter/MacTestPresenter.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:XCTestPlayground.playground">
+   </FileRef>
+   <FileRef
       location = "group:Play.playground">
    </FileRef>
    <FileRef

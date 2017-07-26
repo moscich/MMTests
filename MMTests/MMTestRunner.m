@@ -33,7 +33,6 @@
       }
       if ([b.bundleURL.lastPathComponent isEqualToString:@"UI_Framework.framework"]) {
         if ([c isSubclassOfClass:MMTestCase.class]) {
-            NSLog(@"I'm in");
           MMTestCase *testCase = [c new];
           unsigned int methodCount = 0;
           Method *methods = class_copyMethodList(testCase.class, &methodCount);
