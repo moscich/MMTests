@@ -14,15 +14,6 @@ class ViewControllerTests: XCTestCase {
     ctrl.loadViewIfNeeded()
     XCTAssertEqual(ctrl.label.text!, "")
   }
-  
-  func testChange() {
-    let vm = ViewModelImpl()
-    let ctrl = ViewController(viewModel: vm)
-    ctrl.loadViewIfNeeded()
-    vm.title.value = "Test"
-    
-    XCTAssertEqual(ctrl.label.text!, "Test")
-  }
 }
 
 class TestObserver: NSObject, XCTestObservation {
