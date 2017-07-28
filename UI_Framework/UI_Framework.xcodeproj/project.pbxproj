@@ -7,28 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7931725E1EE3F6E2008B7E8A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725D1EE3F6E2008B7E8A /* ViewModel.swift */; };
-		793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */; };
-		793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793172611EE3FCAF008B7E8A /* ViewController.xib */; };
 		7937FE621EED7E9E00A20F6D /* cocoahead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7937FE611EED7E9E00A20F6D /* cocoahead.png */; };
 		79536BE81EE2960100F6C0B9 /* UI_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BE61EE2960100F6C0B9 /* UI_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79536BEF1EE2961900F6C0B9 /* SomeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BEE1EE2961900F6C0B9 /* SomeFile.swift */; };
 		79536BF11EE2B96D00F6C0B9 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */; };
-		79536BFC1EE2E0E800F6C0B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		7931725D1EE3F6E2008B7E8A /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelImpl.swift; sourceTree = "<group>"; };
-		793172611EE3FCAF008B7E8A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		7937FE611EED7E9E00A20F6D /* cocoahead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocoahead.png; sourceTree = "<group>"; };
 		79536BE31EE2960100F6C0B9 /* UI_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79536BE61EE2960100F6C0B9 /* UI_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI_Framework.h; sourceTree = "<group>"; };
 		79536BE71EE2960100F6C0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79536BEE1EE2961900F6C0B9 /* SomeFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeFile.swift; sourceTree = "<group>"; };
 		79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
-		79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +59,6 @@
 				79536BE71EE2960100F6C0B9 /* Info.plist */,
 				79536BEE1EE2961900F6C0B9 /* SomeFile.swift */,
 				79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */,
-				79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */,
-				7931725D1EE3F6E2008B7E8A /* ViewModel.swift */,
-				7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */,
-				793172611EE3FCAF008B7E8A /* ViewController.xib */,
 			);
 			path = UI_Framework;
 			sourceTree = "<group>";
@@ -154,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */,
 				7937FE621EED7E9E00A20F6D /* cocoahead.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,9 +153,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */,
-				7931725E1EE3F6E2008B7E8A /* ViewModel.swift in Sources */,
-				79536BFC1EE2E0E800F6C0B9 /* ViewController.swift in Sources */,
 				79536BF11EE2B96D00F6C0B9 /* ViewControllerTests.swift in Sources */,
 				79536BEF1EE2961900F6C0B9 /* SomeFile.swift in Sources */,
 			);
