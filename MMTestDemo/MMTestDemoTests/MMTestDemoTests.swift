@@ -18,4 +18,12 @@ class MMTestDemoTests: XCTestCase {
     XCTAssertEqual(ctrl.label.text!, "")
   }
   
+  func testString() {
+    let vm = ViewModelImpl()
+    vm.title = "Test"
+    let ctrl = ViewController(viewModel: vm)
+    ctrl.loadViewIfNeeded()
+    XCTAssertEqual(ctrl.label.text!, "Test")
+  }
+  
 }
