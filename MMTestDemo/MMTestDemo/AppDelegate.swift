@@ -17,11 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
     
-    ViewController()
-    let runner = MMTestRunner()
-    let result = runner.runTests()
+    let vm = ViewModelImpl()
+    vm.title = "Hello!"
+    let ctrl = ViewController(viewModel: vm)
+    self.window = UIWindow(frame: UIScreen.main.bounds)
+    self.window?.rootViewController = ctrl
+    self.window?.makeKeyAndVisible()
     
     return true
   }

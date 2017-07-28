@@ -11,8 +11,7 @@ import XCTest
 
 class MMTestDemoTests: XCTestCase {
     
-  func testEmpty() {
-    
+  func testEmptyString() {
     let vm = ViewModelImpl()
     let ctrl = ViewController(viewModel: vm)
     ctrl.loadViewIfNeeded()

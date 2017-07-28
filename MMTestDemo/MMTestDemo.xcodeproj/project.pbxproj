@@ -16,6 +16,7 @@
 		799C0D1E1F2BA2600090236E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C0D1A1F2BA2600090236E /* ViewModel.swift */; };
 		799C0D1F1F2BA2600090236E /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799C0D1B1F2BA2600090236E /* ViewModelImpl.swift */; };
 		799C0D201F2BA2600090236E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799C0D1C1F2BA2600090236E /* ViewController.xib */; };
+		79C9E24C1F2BA645006FF460 /* cocoahead.png in Resources */ = {isa = PBXBuildFile; fileRef = 79C9E24B1F2BA645006FF460 /* cocoahead.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		799C0D1A1F2BA2600090236E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		799C0D1B1F2BA2600090236E /* ViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelImpl.swift; sourceTree = "<group>"; };
 		799C0D1C1F2BA2600090236E /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		79C9E24B1F2BA645006FF460 /* cocoahead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocoahead.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		790BD95A1EE1F57C0090C344 /* MMTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				79C9E24B1F2BA645006FF460 /* cocoahead.png */,
 				799C0D191F2BA2600090236E /* ViewController.swift */,
 				799C0D1A1F2BA2600090236E /* ViewModel.swift */,
 				799C0D1B1F2BA2600090236E /* ViewModelImpl.swift */,
@@ -223,6 +226,7 @@
 				790BD9661EE1F57C0090C344 /* LaunchScreen.storyboard in Resources */,
 				799C0D201F2BA2600090236E /* ViewController.xib in Resources */,
 				790BD9631EE1F57C0090C344 /* Assets.xcassets in Resources */,
+				79C9E24C1F2BA645006FF460 /* cocoahead.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
