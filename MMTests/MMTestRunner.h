@@ -10,6 +10,6 @@
 
 @interface MMTestRunner : NSObject
 @property(nonatomic, strong) NSMutableArray *bundles;
-- (NSArray *)runTests;
+- (NSArray *)runTests:(NSString *)bundle;
 + (NSArray<NSString *> *)bundles;
 @end

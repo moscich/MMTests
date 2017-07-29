@@ -7,106 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		790E68941F27AEED0082F1DB /* UI_FrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790E68931F27AEED0082F1DB /* UI_FrameworkTests.swift */; };
-		790E68961F27AEED0082F1DB /* UI_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79536BE31EE2960100F6C0B9 /* UI_Framework.framework */; };
-		790E689D1F27AFCC0082F1DB /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		790E689E1F27AFEE0082F1DB /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */; };
-		790E68A11F27AFEF0082F1DB /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790E689F1F27AFEF0082F1DB /* ReactiveSwift.framework */; };
-		790E68A21F27AFEF0082F1DB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790E68A01F27AFEF0082F1DB /* Result.framework */; };
-		790E68A31F27AFF60082F1DB /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 790E689F1F27AFEF0082F1DB /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		790E68A41F27AFF60082F1DB /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 790E68A01F27AFEF0082F1DB /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7931725E1EE3F6E2008B7E8A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725D1EE3F6E2008B7E8A /* ViewModel.swift */; };
-		793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */; };
-		793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793172611EE3FCAF008B7E8A /* ViewController.xib */; };
-		7937FE621EED7E9E00A20F6D /* cocoahead.png in Resources */ = {isa = PBXBuildFile; fileRef = 7937FE611EED7E9E00A20F6D /* cocoahead.png */; };
 		79536BE81EE2960100F6C0B9 /* UI_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79536BE61EE2960100F6C0B9 /* UI_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79536BEF1EE2961900F6C0B9 /* SomeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BEE1EE2961900F6C0B9 /* SomeFile.swift */; };
 		79536BF11EE2B96D00F6C0B9 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */; };
-		79536BFC1EE2E0E800F6C0B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */; };
-		79FB3CBD1EF8357500E9B7BA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		790E68971F27AEED0082F1DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79536BDA1EE2960100F6C0B9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79536BE21EE2960100F6C0B9;
-			remoteInfo = UI_Framework;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		790E689C1F27AFBC0082F1DB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				790E68A31F27AFF60082F1DB /* ReactiveSwift.framework in CopyFiles */,
-				790E68A41F27AFF60082F1DB /* Result.framework in CopyFiles */,
-				790E689D1F27AFCC0082F1DB /* ReactiveCocoa.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		790E68911F27AEED0082F1DB /* UI_FrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UI_FrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		790E68931F27AEED0082F1DB /* UI_FrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_FrameworkTests.swift; sourceTree = "<group>"; };
-		790E68951F27AEED0082F1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		790E689F1F27AFEF0082F1DB /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = ../Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
-		790E68A01F27AFEF0082F1DB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		7931725D1EE3F6E2008B7E8A /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelImpl.swift; sourceTree = "<group>"; };
-		793172611EE3FCAF008B7E8A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		7937FE611EED7E9E00A20F6D /* cocoahead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocoahead.png; sourceTree = "<group>"; };
 		79536BE31EE2960100F6C0B9 /* UI_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79536BE61EE2960100F6C0B9 /* UI_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI_Framework.h; sourceTree = "<group>"; };
 		79536BE71EE2960100F6C0B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79536BEE1EE2961900F6C0B9 /* SomeFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeFile.swift; sourceTree = "<group>"; };
 		79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
-		79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		790E688E1F27AEED0082F1DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				790E68A11F27AFEF0082F1DB /* ReactiveSwift.framework in Frameworks */,
-				790E68A21F27AFEF0082F1DB /* Result.framework in Frameworks */,
-				790E689E1F27AFEE0082F1DB /* ReactiveCocoa.framework in Frameworks */,
-				790E68961F27AEED0082F1DB /* UI_Framework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79536BDF1EE2960100F6C0B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79FB3CBD1EF8357500E9B7BA /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		790E68921F27AEED0082F1DB /* UI_FrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				790E68931F27AEED0082F1DB /* UI_FrameworkTests.swift */,
-				790E68951F27AEED0082F1DB /* Info.plist */,
-			);
-			path = UI_FrameworkTests;
-			sourceTree = "<group>";
-		};
 		79536BD91EE2960100F6C0B9 = {
 			isa = PBXGroup;
 			children = (
 				79536BE51EE2960100F6C0B9 /* UI_Framework */,
-				790E68921F27AEED0082F1DB /* UI_FrameworkTests */,
 				79536BE41EE2960100F6C0B9 /* Products */,
 				79536C041EE319F500F6C0B9 /* Frameworks */,
 			);
@@ -116,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				79536BE31EE2960100F6C0B9 /* UI_Framework.framework */,
-				790E68911F27AEED0082F1DB /* UI_FrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,15 +50,9 @@
 		79536BE51EE2960100F6C0B9 /* UI_Framework */ = {
 			isa = PBXGroup;
 			children = (
-				7937FE611EED7E9E00A20F6D /* cocoahead.png */,
 				79536BE61EE2960100F6C0B9 /* UI_Framework.h */,
 				79536BE71EE2960100F6C0B9 /* Info.plist */,
-				79536BEE1EE2961900F6C0B9 /* SomeFile.swift */,
 				79536BF01EE2B96D00F6C0B9 /* ViewControllerTests.swift */,
-				79536BFB1EE2E0E800F6C0B9 /* ViewController.swift */,
-				7931725D1EE3F6E2008B7E8A /* ViewModel.swift */,
-				7931725F1EE3F775008B7E8A /* ViewModelImpl.swift */,
-				793172611EE3FCAF008B7E8A /* ViewController.xib */,
 			);
 			path = UI_Framework;
 			sourceTree = "<group>";
@@ -140,8 +60,6 @@
 		79536C041EE319F500F6C0B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				790E689F1F27AFEF0082F1DB /* ReactiveSwift.framework */,
-				790E68A01F27AFEF0082F1DB /* Result.framework */,
 				7931725B1EE3F426008B7E8A /* ReactiveCocoa.framework */,
 			);
 			name = Frameworks;
@@ -161,25 +79,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		790E68901F27AEED0082F1DB /* UI_FrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 790E689B1F27AEED0082F1DB /* Build configuration list for PBXNativeTarget "UI_FrameworkTests" */;
-			buildPhases = (
-				790E688D1F27AEED0082F1DB /* Sources */,
-				790E688E1F27AEED0082F1DB /* Frameworks */,
-				790E688F1F27AEED0082F1DB /* Resources */,
-				790E689C1F27AFBC0082F1DB /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				790E68981F27AEED0082F1DB /* PBXTargetDependency */,
-			);
-			name = UI_FrameworkTests;
-			productName = UI_FrameworkTests;
-			productReference = 790E68911F27AEED0082F1DB /* UI_FrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		79536BE21EE2960100F6C0B9 /* UI_Framework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79536BEB1EE2960100F6C0B9 /* Build configuration list for PBXNativeTarget "UI_Framework" */;
@@ -204,15 +103,9 @@
 		79536BDA1EE2960100F6C0B9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Marek Mościchowski";
 				TargetAttributes = {
-					790E68901F27AEED0082F1DB = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = X6HK62UHTP;
-						ProvisioningStyle = Automatic;
-					};
 					79536BE21EE2960100F6C0B9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X6HK62UHTP;
@@ -234,90 +127,32 @@
 			projectRoot = "";
 			targets = (
 				79536BE21EE2960100F6C0B9 /* UI_Framework */,
-				790E68901F27AEED0082F1DB /* UI_FrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		790E688F1F27AEED0082F1DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79536BE11EE2960100F6C0B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793172621EE3FCAF008B7E8A /* ViewController.xib in Resources */,
-				7937FE621EED7E9E00A20F6D /* cocoahead.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		790E688D1F27AEED0082F1DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				790E68941F27AEED0082F1DB /* UI_FrameworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79536BDE1EE2960100F6C0B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793172601EE3F775008B7E8A /* ViewModelImpl.swift in Sources */,
-				7931725E1EE3F6E2008B7E8A /* ViewModel.swift in Sources */,
-				79536BFC1EE2E0E800F6C0B9 /* ViewController.swift in Sources */,
 				79536BF11EE2B96D00F6C0B9 /* ViewControllerTests.swift in Sources */,
-				79536BEF1EE2961900F6C0B9 /* SomeFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		790E68981F27AEED0082F1DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79536BE21EE2960100F6C0B9 /* UI_Framework */;
-			targetProxy = 790E68971F27AEED0082F1DB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		790E68991F27AEED0082F1DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = X6HK62UHTP;
-				INFOPLIST_FILE = UI_FrameworkTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moscichowski.UI-FrameworkTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		790E689A1F27AEED0082F1DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				DEVELOPMENT_TEAM = X6HK62UHTP;
-				INFOPLIST_FILE = UI_FrameworkTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.moscichowski.UI-FrameworkTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		79536BE91EE2960100F6C0B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -463,14 +298,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		790E689B1F27AEED0082F1DB /* Build configuration list for PBXNativeTarget "UI_FrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				790E68991F27AEED0082F1DB /* Debug */,
-				790E689A1F27AEED0082F1DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		79536BDD1EE2960100F6C0B9 /* Build configuration list for PBXProject "UI_Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

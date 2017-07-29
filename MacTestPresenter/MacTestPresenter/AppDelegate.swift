@@ -22,9 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, GCDAsyncSocketDelegate {
     statusBarItem = statusBar.statusItem(withLength: -1)
     statusBarItem.menu = menu
     let attString = NSMutableAttributedString(string: "P\nF")
-    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.green, range: NSRange.init(location: 0, length: 3))
-    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.red, range: NSRange.init(location: 4, length: 3))
-    attString.addAttribute(NSFontAttributeName, value: NSFont.systemFont(ofSize: 10), range: NSRange.init(location: 0, length: 7))
+    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.green, range: NSRange.init(location: 0, length: 1))
+    attString.addAttribute(NSForegroundColorAttributeName, value: NSColor.red, range: NSRange.init(location: 2, length: 1))
+    attString.addAttribute(NSFontAttributeName, value: NSFont.systemFont(ofSize: 10), range: NSRange.init(location: 0, length: 3))
     statusBarItem.attributedTitle = attString
     
     sock = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.main)

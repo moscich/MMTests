@@ -1,26 +1,30 @@
 //
 //  ViewController.swift
-//  MMTestDemo
+//  UI_Framework
 //
-//  Created by Marek Mościchowski on 02.06.2017.
+//  Created by Marek Mościchowski on 03.06.2017.
 //  Copyright © 2017 Marek Mościchowski. All rights reserved.
 //
 
+import Foundation
 import UIKit
-//import ReactiveCocoa
 
-class ViewController: UIViewController {
-
-  override func viewDidLoad() {
+public class ViewController : UIViewController {
+  
+  let viewModel : ViewModel
+  @IBOutlet public var label: UILabel!
+  
+  public init(viewModel: ViewModel = ViewModelImpl()) {
+    self.viewModel = viewModel
+    super.init(nibName: "ViewController", bundle: Bundle.init(for: type(of: self)))
+  }
+  
+  public required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  public override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    label.text = viewModel.title
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
-

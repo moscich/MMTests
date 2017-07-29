@@ -12,7 +12,7 @@
 
 @implementation MMTestRunner
 
-- (NSArray *)runTests {
+- (NSArray *)runTests:(NSString *)bundle {
   self.bundles = [NSMutableArray new];
   int numClasses;
   Class * classes = NULL;
@@ -31,7 +31,7 @@
       if(![self.bundles containsObject:b]) {
         [self.bundles addObject:b];
       }
-      if ([b.bundleURL.lastPathComponent isEqualToString:@"UI_Framework.framework"]) {
+      if ([b.bundleURL.lastPathComponent isEqualToString:bundle]) {
         if ([c isSubclassOfClass:MMTestCase.class]) {
           MMTestCase *testCase = [c new];
           unsigned int methodCount = 0;
