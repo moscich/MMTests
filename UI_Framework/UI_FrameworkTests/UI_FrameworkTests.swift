@@ -2,21 +2,28 @@
 //  UI_FrameworkTests.swift
 //  UI_FrameworkTests
 //
-//  Created by Marek Mościchowski on 25.07.2017.
+//  Created by Marek Mościchowski on 29.07.2017.
 //  Copyright © 2017 Marek Mościchowski. All rights reserved.
 //
 
 import XCTest
-@testable import UI_Framework
+import UI_Framework
 
-class UI_FrameworkTests: XCTestCase {
+class MMTestDemoTests: XCTestCase {
   
-  func testExample() {
+  func testEmptyString() {
     let vm = ViewModelImpl()
-    let vc = ViewController(viewModel: vm)
-    vm.title.value = "test"
-    vc.loadViewIfNeeded()
-    XCTAssertEqual(vc.label.text, "test")
+    let ctrl = ViewController(viewModel: vm)
+    ctrl.loadViewIfNeeded()
+    XCTAssertEqual(ctrl.label.text!, "")
   }
   
+  func testString() {
+    let vm = ViewModelImpl()
+    vm.title = "Test"
+    let ctrl = ViewController(viewModel: vm)
+    ctrl.loadViewIfNeeded()
+    XCTAssertEqual(ctrl.label.text!, "Test")
+  }
+
 }
