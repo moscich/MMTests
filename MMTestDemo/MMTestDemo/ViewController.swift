@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import ReactiveSwift
+import ReactiveCocoa
 
 public class ViewController : UIViewController {
   
@@ -25,6 +27,6 @@ public class ViewController : UIViewController {
   
   public override func viewDidLoad() {
     super.viewDidLoad()
-    label.text = viewModel.title
+    label.reactive.text <~ viewModel.title
   }
 }

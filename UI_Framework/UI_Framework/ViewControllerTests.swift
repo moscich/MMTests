@@ -9,19 +9,19 @@
 import Foundation
 import MMTests
 
-//class ViewControllerTests : MMTestCase {
-//  
-//  func testExample() {
-//  
-//    let vm = ViewModelImpl()
-//    let ctrl = ViewController(viewModel: vm)
-//    ctrl.loadViewIfNeeded()
-//    MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "" as NSObject, context: #function)
-//    
-//    vm.title = "Test"
-//    
-//    MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "Test" as NSObject, context: #function)
-//    
-//  }
-//  
-//}
+class ViewControllerTests : MMTestCase {
+  
+  func testExample() {
+  
+    let vm = ViewModelImpl()
+    let ctrl = ViewController(viewModel: vm)
+    ctrl.loadViewIfNeeded()
+    MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "" as NSObject, context: #function)
+    
+    vm.title.value = "Test"
+    
+    MMTestCase.assertEqual(ctrl.label.text! as NSObject, object: "Test" as NSObject, context: #function)
+    
+  }
+  
+}

@@ -17,7 +17,8 @@ displayer.send(summary.passed, failed: summary.failed) {
   PlaygroundPage.current.finishExecution()
 }
 
-
+let bundles = MMTestRunner.bundles()
+bundles?.contains("UI_Framework.framework")
 
 
 
